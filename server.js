@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const express = require('express');
-const userRoutes = require('./routes/userRoutes');
+const userRoutes = require('./routes/userRoutes.js');
 const thoughtRoutes = require('./routes/thoughtRoutes');
 // import .env
 require('dotenv').config();
