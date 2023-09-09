@@ -14,7 +14,7 @@ const users = [
 ];
 
 const thoughts = [
-    { thoughtText: 'Codings kinda gamer ya know', username: 'xxCodeKillerxx'}
+    { thoughtText: 'Codings kinda gamer ya know', username: 'xxCodeKillerxx'},
     { thoughtText: 'Code scrolling when i close my eyes .>.', username:'HappyHacker'} 
 ];
 
