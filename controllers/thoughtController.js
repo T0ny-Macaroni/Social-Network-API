@@ -36,6 +36,9 @@ module.exports = {
             const thought = await Thought.findByAndDelete(req.params.id);
             if (!thought) return res.status(404).json( {message: 'Thought Not Found' })
 
+            // GOTTA get that bonus
+            await User.updateOne({_id: thought.userId }, { $pull: {thoughts: thought._id }})
+
             res.json({ message: 'Thought Deleted'})
         }catch (err) {
             res.status(500).json(err)

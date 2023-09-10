@@ -4,7 +4,7 @@ const moment = require('moment');
 
 const ReactionSchema= new Schema({
     reactionId: {
-        type: Schema.types.objectId,
+        type: Schema.Types.objectId,
         default: mongoose.Types.ObjectId
     },
     reactionBody: {
